@@ -146,13 +146,3 @@ def checkWinner(letter, state):
 if __name__ == '__main__':
     main()
 
-#Question 4:
-#minimax(s1) = 0
-#minimax(s2) = 1 -- minimax(s2) > minimax(s1), so move is suboptimal O
-#optimal move: O -> board[1][1], only move that maintains a draw
-#minimax(s3) = 0 -- s3 < s2, so move is suboptimal for X
-#optimal moves: X-> board[0][2] or X->board[2][0]
-#minimax(s4) = 1 -- s4 > s3, move is suboptimal for O
-#optimal moves: O->board[0][2], O->board[1][1], or O->board[1][2]
-#minimax(s5) = 1, move is optimal
-#minimax(s6) = 1, move is optimal
